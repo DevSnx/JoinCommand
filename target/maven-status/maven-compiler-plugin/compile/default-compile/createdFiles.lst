@@ -1,6 +1,6 @@
-de\snx\joincommand\utils\FileBase.class
-de\snx\joincommand\file\CommandFile.class
-de\snx\joincommand\FileManager.class
-de\snx\joincommand\listener\PlayerJoinListener$1.class
-de\snx\joincommand\listener\PlayerJoinListener.class
-de\snx\joincommand\JoinCommand.class
+de\devsnx\joincommand\file\CommandFile.class
+de\devsnx\joincommand\listener\PlayerListener$1.class
+de\devsnx\joincommand\FileManager.class
+de\devsnx\joincommand\utils\FileBase.class
+de\devsnx\joincommand\listener\PlayerListener.class
+de\devsnx\joincommand\joincommand.class

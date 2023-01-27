@@ -1,18 +1,13 @@
-package de.snx.joincommand;
+package de.devsnx.joincommand;
 
-import de.snx.joincommand.listener.PlayerJoinListener;
+import de.devsnx.joincommand.listener.PlayerListener;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
 
-public class JoinCommand extends JavaPlugin{
+public class joincommand extends JavaPlugin{
 
-    public static JoinCommand instance;
+    public static joincommand instance;
     public static FileManager fileManager;
 
     @Override
@@ -20,7 +15,7 @@ public class JoinCommand extends JavaPlugin{
         instance = this;
         fileManager = new FileManager();
         PluginManager load = Bukkit.getPluginManager();
-        load.registerEvents(new PlayerJoinListener(), this);
+        load.registerEvents(new PlayerListener(), this);
     }
 
     @Override
@@ -28,7 +23,7 @@ public class JoinCommand extends JavaPlugin{
         instance = null;
     }
 
-    public static JoinCommand getInstance() {
+    public static joincommand getInstance() {
         return instance;
     }
 

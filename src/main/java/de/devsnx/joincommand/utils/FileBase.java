@@ -1,9 +1,9 @@
-package de.snx.joincommand.utils;
+package de.devsnx.joincommand.utils;
 
 import java.io.File;
 import java.io.IOException;
 
-import de.snx.joincommand.JoinCommand;
+import de.devsnx.joincommand.joincommand;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -22,7 +22,7 @@ public class FileBase {
 
     public void reloadConfig() {
         if (this.file == null)
-            this.file = new File(JoinCommand.getInstance().getDataFolder() + this.path, String.valueOf(this.fileName) + ".yml");
+            this.file = new File(joincommand.getInstance().getDataFolder() + this.path, String.valueOf(this.fileName) + ".yml");
         if (!this.file.exists()) {
             this.file.getParentFile().mkdir();
             try {

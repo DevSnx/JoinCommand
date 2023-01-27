@@ -1,6 +1,6 @@
-package de.snx.joincommand;
+package de.devsnx.joincommand;
 
-import de.snx.joincommand.file.CommandFile;
+import de.devsnx.joincommand.file.CommandFile;
 
 public class FileManager {
 

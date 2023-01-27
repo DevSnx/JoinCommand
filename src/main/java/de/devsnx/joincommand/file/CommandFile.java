@@ -1,6 +1,6 @@
-package de.snx.joincommand.file;
+package de.devsnx.joincommand.file;
 
-import de.snx.joincommand.utils.FileBase;
+import de.devsnx.joincommand.utils.FileBase;
 import org.bukkit.configuration.file.FileConfiguration;
 
 public class CommandFile extends FileBase {
